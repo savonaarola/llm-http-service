@@ -1,0 +1,11 @@
+[package]
+name = "llm_http"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8.4"
+llm_calls ={ path = "../llm_calls"}
+
+tokio ={ version = "1", features = ["rt-multi-thread", "macros"]}
+serde ={ version = "1", features = ["derive"]}

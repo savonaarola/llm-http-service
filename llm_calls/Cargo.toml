@@ -1,0 +1,10 @@
+[package]
+name = "llm_calls"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = {version = "1", features = ["process"] }
+
+[dev-dependencies]
+tokio = {version = "1", features = ["macros","rt"]}

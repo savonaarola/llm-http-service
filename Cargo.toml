@@ -1,0 +1,4 @@
+[workspace]
+members= ["llm_calls", "llm_http"]
+
+resolver = "3"
