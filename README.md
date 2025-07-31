@@ -18,15 +18,16 @@ HTTP interface for Ollama LLMs, built with Rust's async ecosystem.
 - Rust toolchain
 
 ## Installation
-
+```bash
 git clone https://github.com/savonaarola/llm-http-service.git
 cd llm-http-service
 cargo run -p llm_http
+```
 
-# List models
+## List models
 curl http://localhost:3000/models
 
-# Query a model
+## Query a model
 curl -X POST http://localhost:3000/query \
   -H "Content-Type: application/json" \
   -d '{"model": "llama2", "prompt": "Explain Rust borrow checker"}'
