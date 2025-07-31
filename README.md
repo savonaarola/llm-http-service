@@ -25,9 +25,13 @@ cargo run -p llm_http
 ```
 
 ## List models
+```bash
 curl http://localhost:3000/models
+```
 
 ## Query a model
+```bash
 curl -X POST http://localhost:3000/query \
   -H "Content-Type: application/json" \
   -d '{"model": "llama2", "prompt": "Explain Rust borrow checker"}'
+```
